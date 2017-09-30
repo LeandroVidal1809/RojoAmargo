@@ -1,0 +1,59 @@
+TypeScript
+------------------------------------------
+Variables = var nombre : tipovalor
+Array = Array<int> = [1,2,3]
+
+Var Visibilidad Global
+let Visibilidad private
+-----------------------------------------
+admite codigo Javascript
+------------------------------------------
+Funciones= function nombrefuncion(nombreVar:tipoVar):TipoRetorno
+-----------------------------------------
+Descargar Node.js
+npm instala todos los repositorios de angular y javascript
+-----------------------
+FRAMEWORK Angular https://cli.angular.io/
+El primer proyecto lo instalamos como dice la url
+------------------
+una vez creado el primer proyecto nos creara todo lo necesario
+lo abrimos desde visual Code
+SRC-APP
+App.Modules declararemos todo lo que vamos a utilizar
+
+los componentes de app.componente son llamados a travez del selector
+Angular 2 orientado a componentes
+
+App.component.html doble llave quiere decir que viene de typescript
+----------------------------
+VISUAL STUDIO CODE UTILIZAR
+ver -> terminal integrado0 
+insertar ultimo comando de cli.angular.io ng serve --open
+puerto por defecto localhost://4200
+
+DEBEMOS INSTALAR BOOTSTRAP en terminal integrada
+npm i bootstrap
+lo declaramo en angular cli.json, en la parte styles y la ruta donde lo instala 
+/node_modules...
+
+para cerrar la conexion ctrl+C en la terminarl integrada
+OJO hay que estar siempre en la misma terminal para cerrar el serve que se abrio.. ya que la terminal integrada puede abrir mas de una terminal
+
+=================================
+ng g component componentes/login
+Con el nuevo componente debemos crear un login  en hmtl para ver la interaccion entre typescript y html
+En login Component ts  dentro de class
+dentro del login creamos dos propiedades Usuario String, Pass String
+Usuario:String = "";
+Pass:String = "";
+generar Function
+Entrar()
+{
+	console.log(this.usua + this.pass)
+}
+
+en component.html poner {{usuario}}
+
+en el input text para referenciarlo debemos poner  [(ngmodel)]="usuario"
+ojo con el import{formsmodule } from '@angular/forms'
+dentro del ngmodule  -  imports escribir formsmodule

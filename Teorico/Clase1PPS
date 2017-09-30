@@ -1,0 +1,30 @@
+COMPROBAR Progs instalados
+CMD:
+node -v (7.4.0)
+npm -v (4.0.5)
+cordova -v (6.5.0) npm install -g cordova
+				   npm update -g cordova
+typescript 	(2.4.2) npm install -g typescript
+					npm update -g typescript 
+
+
+(VER TEMA DE INSTALAR CLI DE NUEVO PARA USAR LA TERMINAL INTEGRADA ) npm -g install angular.cli
+
+
+En la carpeta PPS en C:/pps
+Aabrimos la terminal integrada y ponemos:
+ionic start primerIonic [sidemenu,tabs,blank,tutorial] --v2  
+luego para levantarlo desde la carpeta que creo ponemos :ionic serve
+
+Abrimos el proyecto a travez del Visual Studio Code
+desde la terminal integrada del proyecto ponemos IONIC SERVER (inicia el servidor de la app)
+
+editar pestañas del proyecto en src-app-pages-.html
+
+Dentro de Resourses tenemos incon.png y este sera nuestra imagen de la applicacion
+y el splash sera la imagen  de presentacion de la app
+pagina para editar tamaños de imagen photopea.com o imageconvertor.com debemos editar para todos los tamaños segun el SO del dispositivo 
+Splash 2208 * 2208 px
+Icon 192*192 px
+Debe ser PNG
+reemplazamos los archivos existentes en resources y ejecutamos el comando ionic resources android para que nos acomode la imagen a todos los tamaños de so
